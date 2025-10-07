@@ -20,22 +20,37 @@ public class Main {
 
     //LECTURE 1
     //add code to input a string replacing the variable 
+    System.out.println("Enter a string: ");
+    scanner.nextLine();
     //words with the input value
-
+    words = scanner.nextLine();
     //print the string
-
+    System.out.println("User Input: " + words);
 
 
 
     //add code to input a new value for the variable
-    //letter
+    System.out.println("Enter a letter A - F: ");
 
+    //letter
+    letter = scanner.next().charAt(0);
     //LECTURE 2
     //if the letter entered is A or B - print "You did GREAT!"
+    if (letter == 'A' || letter == 'B') {
+      System.out.println("You did GREAT!");
+    }
     //if the letter is C - print "You did GOOD!"
+    else if (letter == 'C') {
+      System.out.println("You did GOOD!");
+    }
     //if the letter is D or F - print "Try again"
+    else if (letter == 'D' || letter == 'F') {
+      System.out.println("Try Again");
+    }
     //if the letter is something else, print "Incorrect value"
-
+    else {
+      System.out.println("Incorrect Value");
+    }
 
     //LECTURE 1
     //this is demonstrating different values
